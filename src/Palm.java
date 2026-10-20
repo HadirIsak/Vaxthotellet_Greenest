@@ -6,7 +6,7 @@ public class Palm extends Plant {
     }
 
     // Arv: Palm ärver från Plant.
-    // Polymorfism: egen beräkning för palmer.
+
     @Override
     public double calculateLiquid() {
         return 0.5 * getHeight();
