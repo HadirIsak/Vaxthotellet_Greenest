@@ -1,10 +1,12 @@
 public class Cactus extends Plant {
+    // Arv: ärver från Plant.
+
+    private String liquidType = "mineralvatten";
 
     public Cactus(String name, double height) {
         super(name, height);
     }
 
-    // Arv från Plant och polymorfism genom egen typ av metoden.
     @Override
     public double calculateLiquid() {
         return 0.02;
@@ -12,6 +14,6 @@ public class Cactus extends Plant {
 
     @Override
     public String getLiquidType() {
-        return "mineralvatten";
+        return liquidType;
     }
 }

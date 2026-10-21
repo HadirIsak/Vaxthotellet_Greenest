@@ -26,13 +26,11 @@ public class Main {
                 break;
             }
 
-            // Kontrollera tom inmatning
             if (input.isEmpty()) {
                 System.out.println("Du måste ange ett namn.");
                 continue;
             }
 
-            // kontrollera att endast bokstäver används
             if (!input.matches("[a-zA-ZåäöÅÄÖ]+")) {
                 System.out.println("Ange endast bokstäver.");
                 continue;
@@ -40,7 +38,6 @@ public class Main {
 
             Plant selectedPlant = null;
 
-            // letar efter växten
             for (Plant plant : plants) {
                 if (plant.getName().equalsIgnoreCase(input)) {
                     selectedPlant = plant;

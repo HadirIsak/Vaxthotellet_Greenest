@@ -1,11 +1,12 @@
-
 public class CarnivorousPlant extends Plant {
+    // Arv: ärver från Plant.
+
+    private String liquidType = "proteindryck";
 
     public CarnivorousPlant(String name, double height) {
         super(name, height);
     }
 
-    // Arv från Plant och polymorfism.
     @Override
     public double calculateLiquid() {
         return 0.1 + (0.2 * getHeight());
@@ -13,6 +14,6 @@ public class CarnivorousPlant extends Plant {
 
     @Override
     public String getLiquidType() {
-        return "proteindryck";
+        return liquidType;
     }
 }

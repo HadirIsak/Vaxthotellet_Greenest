@@ -1,11 +1,10 @@
-
 public class Palm extends Plant {
+
+    private String liquidType = "kranvatten";
 
     public Palm(String name, double height) {
         super(name, height);
     }
-
-    // Arv: Palm ärver från Plant.
 
     @Override
     public double calculateLiquid() {
@@ -14,6 +13,6 @@ public class Palm extends Plant {
 
     @Override
     public String getLiquidType() {
-        return "kranvatten";
+        return liquidType;
     }
 }
